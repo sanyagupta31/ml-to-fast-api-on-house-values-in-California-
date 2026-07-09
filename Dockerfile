@@ -11,4 +11,4 @@ COPY . .
 #5. Expose the port that the application will run on
 EXPOSE 80
 #6. Set the command to run the application
-CMD ["uvicorn","main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn","main:app", "--host", "0.0.0.0", "--port", "10000"]
