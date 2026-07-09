@@ -33,6 +33,31 @@ Then open:
 - `http://127.0.0.1:8000/`
 - `http://127.0.0.1:8000/docs`
 
+## Run with Docker
+Build the Docker image:
+
+```bash
+docker build -t dock .
+```
+
+Run the container:
+
+```bash
+docker run --rm -p 80:80 dock
+```
+
+Then open:
+- `http://localhost/`
+- `http://localhost/docs`
+
+Stop the container:
+
+```bash
+docker ps
+# copy the container ID from output
+docker stop <container_id>
+```
+
 ## API endpoint
 ### POST /predict
 Send a JSON body like:
